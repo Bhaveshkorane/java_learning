@@ -26,6 +26,7 @@ public class exception {
 
         System.out.println("Value of c = "+c);
 
+        
     }
     
 }
