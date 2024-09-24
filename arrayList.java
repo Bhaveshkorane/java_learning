@@ -48,6 +48,11 @@ public class arrayList {
         System.out.println("After removing element:"+names);
 
 
+        //check if the element is present in the array
+        System.out.println("check if the element kritikumar is present:"+names.contains("kirtikumar"));
+        System.out.println("checks if Bhavesh is present:"+names.contains("Bhavesh"));
+
+
 
 
         
