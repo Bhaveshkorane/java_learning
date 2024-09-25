@@ -1,0 +1,48 @@
+public class StaticBlock {
+        static class Student{
+
+            static int count;
+            static String school;
+        
+            String name;
+            int age;
+            int roll;
+            Student(){
+
+            }
+
+
+            static{
+                System.out.println("in static block");
+                school = "DVN";
+            }
+        
+        
+            void show(){
+                System.out.println("name: "+this.name+" age: "+this.age+" roll: "+this.roll+this.school);
+            }
+    
+            public static void show1(Student obj){
+                System.out.println("name: "+obj.name+" age: "+obj.age+" roll: "+obj.roll);
+            }
+        }
+        public static void main(String args[]){
+            Student s1 = new Student();
+            s1.name  = "bhavesh";
+            s1.age = 20;
+            s1.roll = (Student.count+=1);
+        
+            Student s2 = new Student();
+            s2.name =  "Abhi";
+            s2.age = 21;
+            s2.roll = (Student.count+=1);
+        
+        
+            // s1.show();
+            // s2.show();
+    
+            Student.show1(s1);
+            Student.show1(s2);
+        
+        }
+}
